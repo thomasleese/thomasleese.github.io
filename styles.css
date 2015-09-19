@@ -52,7 +52,7 @@ a:hover {
 .about-box h1 {
     margin-bottom: 0.3rem;
     font-size: 2rem;
-    text-shadow: -5px 5px 0 rgb(60, 60, 60);
+    text-shadow: -2px 2px 0 rgb(60, 60, 60);
     letter-spacing: 0.25rem;
 }
 
@@ -65,6 +65,7 @@ a:hover {
 @media (min-device-width: 420px) {
     .about-box h1 {
         font-size: 3em;
+        text-shadow: -3px 3px 0 rgb(60, 60, 60);
     }
 
     .about-box p {
@@ -76,6 +77,7 @@ a:hover {
 @media (min-device-width: 550px) {
     .about-box h1 {
         font-size: 4em;
+        text-shadow: -4px 4px 0 rgb(60, 60, 60);
     }
 
     .about-box p {
@@ -87,6 +89,7 @@ a:hover {
 @media (min-device-width: 700px) {
     .about-box h1 {
         font-size: 5.2em;
+        text-shadow: -5px 5px 0 rgb(60, 60, 60);
     }
 
     .about-box p {
