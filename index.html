@@ -4,11 +4,48 @@
   <head>
     <meta charset="UTF-8" />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Thomas Leese</title>
+
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/PT+Sans:400,700" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="icon.png" />
   </head>
 
   <body>
-    <h1>Thomas Leese</h1>
+    <main class="page">
+      <article class="about-box">
+        <h1>Thomas Leese</h1>
+        <p>Developer &amp; Designer</p>
+      </article>
+
+      <footer class="links">
+        <ul>
+          <li><a id="email-link" href="mailto:">Email</a></li>
+          <li><a href="https://github.com/tomleese">GitHub</a></li>
+          <li><a href="https://twitter.com/tomleese">Twitter</a></li>
+          <li><a href="https://uk.linkedin.com/in/thomasleese">LinkedIn</a></li>
+        </ul>
+      </footer>
+    </main>
+
+    <script>
+      (function() {
+        var letters = ['a', 'b', 'e', 'h', 'i', 'l', 'm', 'n', 'o', 's', 't', 'x', '@', '.'];
+        var join = function() {
+          var s = '';
+          for (var i = 0; i < arguments.length; i++) {
+            s += letters[arguments[i]];
+          }
+          return s;
+        };
+
+        var s = join(4, 7, 1, 8, 11, 12, 10, 3, 8, 6, 0, 9, 5, 2, 2, 9, 2, 13, 6, 2);
+        document.getElementById('email-link').href = 'mailto:' + s;
+      }());
+    </script>
   </body>
 
 </html>
