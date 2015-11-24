@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,8 +24,20 @@
         <p>Developer &amp; Designer</p>
       </article>
 
+      <article class="projects-box" hidden>
+        {% for project in site.data.projects %}
+          <section>
+            <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
+            <p>{{ project.description }}</p>
+          </section>
+        {% endfor %}
+
+        <a class="close-button" href="#">╳</a>
+      </article>
+
       <footer class="links">
         <ul>
+          <li><a href="#projects" class="projects-button">Projects</a></li>
           <li><a id="email-link" href="mailto:">Email</a></li>
           <li><a href="https://github.com/thomasleese">GitHub</a></li>
           <li><a href="https://uk.linkedin.com/in/thomasleese">LinkedIn</a></li>
@@ -43,6 +58,22 @@
 
         var s = join(4, 7, 1, 8, 11, 12, 10, 3, 8, 6, 0, 9, 5, 2, 2, 9, 2, 13, 6, 2);
         document.getElementById('email-link').href = 'mailto:' + s;
+      }());
+
+      (function() {
+        var $projectsBox = document.querySelector('.projects-box');
+        var $closeButton = document.querySelector('.close-button');
+        var $projectsButton = document.querySelector('.projects-button');
+
+        $closeButton.onclick = function(e) {
+          e.preventDefault();
+          $projectsBox.hidden = true;
+        };
+
+        $projectsButton.onclick = function(e) {
+          e.preventDefault();
+          $projectsBox.hidden = false;
+        };
       }());
     </script>
   </body>
