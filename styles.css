@@ -60,7 +60,11 @@ a:hover {
 .about-box p {
     margin-top: 0.3rem;
     font-size: 1rem;
-    letter-spacing: 0.28rem;
+    letter-spacing: 0.2rem;
+}
+
+.about-box a {
+    font-weight: bold;
 }
 
 @media (min-device-width: 420px) {
@@ -71,7 +75,7 @@ a:hover {
 
     .about-box p {
         font-size: 1.2em;
-        letter-spacing: 0.5rem;
+        letter-spacing: 0.3rem;
     }
 }
 
@@ -83,7 +87,7 @@ a:hover {
 
     .about-box p {
         font-size: 1.5em;
-        letter-spacing: 0.65rem;
+        letter-spacing: 0.4rem;
     }
 }
 
