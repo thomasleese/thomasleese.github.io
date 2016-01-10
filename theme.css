@@ -1,0 +1,26 @@
+.london-eye {
+    background-image: url('images/backgrounds/IMG_20141230_094336.jpg');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+body {
+    color: white;
+}
+
+a {
+    color: rgb(240, 240, 240);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+a:hover {
+    color: white;
+    text-decoration-style: solid;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
