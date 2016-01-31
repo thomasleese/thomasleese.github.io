@@ -1,8 +1,39 @@
 header {
-    background: black;
+    font-family: 'Raleway', sans-serif;
+    background: rgb(20, 20, 20);
+    color: white;
+    text-transform: uppercase;
 }
 
-#header-overlay {
+header a {
+    color: rgb(230, 230, 230);
+}
+
+header a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+header .icon {
+    font-size: 1.4rem;
+    margin: 0 .4rem;
+}
+
+header.post {
+    background-image: url('../images/IMG_20141230_094336.jpg');
+    background-size: cover;
+    padding: 2rem 0;
+}
+
+header.post .icon {
+    font-size: 2rem;
+}
+
+header.frontpage {
+    margin-bottom: 6rem;
+}
+
+header.frontpage #header-overlay {
     background: rgb(20, 20, 20);
     background-image: url('../images/IMG_20141230_094336.jpg');
     background-size: cover;
@@ -26,7 +57,7 @@ header {
     }
 }
 
-#header-logo {
+header.frontpage #header-logo {
     display: block;
     width: 400px;
     height: 200px;
@@ -45,32 +76,21 @@ header {
     animation-fill-mode: forwards;
 }
 
-#header-logo h1 {
-    text-transform: uppercase;
+header.frontpage #header-logo h1 {
     font-size: 3.2rem;
 }
 
-#header-logo h2 {
+header.frontpage #header-logo h2 {
     text-transform: lowercase;
     font-size: 1.6rem;
     margin-bottom: 2rem;
 }
 
-#header-logo > a {
-    color: rgb(200, 200, 200);
+header.frontpage #header-logo > a {
     transition: color .1s;
 }
 
-#header-logo > a:hover {
-    color: white;
-}
-
-#header-logo .icon {
-    font-size: 1.4rem;
-    margin: 0 .25rem;
-}
-
-#header-more {
+header.frontpage #header-more {
     position: absolute;
     bottom: 50px;
     left: 50%;
@@ -94,7 +114,7 @@ header {
 }
 
 section {
-    margin: 5rem 0;
+    margin: 3rem 0;
 }
 
 footer {

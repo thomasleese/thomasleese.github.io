@@ -1,58 +1,14 @@
 ---
+layout: page
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<section>
+  <h1>Latest Posts</h1>
 
-    <title>Thomas Leese</title>
-
-    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-
-    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Raleway:200" />
-
-    <link href="styles/theme.css" rel="stylesheet" />
-
-    <link rel="icon" href="images/icon.png" />
-  </head>
-
-  <body>
-    <header>
-      <div id="header-overlay"></div>
-
-      <div id="header-logo">
-        <h1>Thomas Leese</h1>
-        <h2>Designer and Developer</h2>
-
-        <a href="https://github.com/thomasleese"><span class="icon ion-social-github"></span></a>
-        <a href="https://twitter.com/tomleese"><span class="icon ion-social-twitter"></span></a>
-        <a href="mailto:inbox@thomasleese.me"><span class="icon ion-email"></span></a>
-      </div>
-
-      <div id="header-more">
-        <span class="ion-chevron-down"></span>
-      </div>
-    </header>
-
-    <main class="container">
-      <section>
-        <h1>Latest Posts</h1>
-
-        {% for post in site.posts %}
-          <article>
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.excerpt }}</p>
-          </article>
-        {% endfor %}
-      </section>
-    </main>
-
-    <footer class="container">
-      &copy; 2016 Thomas Leese
-    </footer>
-
-    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
-  </body>
-</html>
+  {% for post in site.posts %}
+    <article>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt }}</p>
+    </article>
+  {% endfor %}
+</section>
