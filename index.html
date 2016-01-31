@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,31 +9,49 @@
     <title>Thomas Leese</title>
 
     <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
 
-    <link href="theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Raleway:200" />
+
+    <link href="styles/theme.css" rel="stylesheet" />
 
     <link rel="icon" href="images/icon.png" />
   </head>
 
   <body>
-    <main class="london-eye">
-      <header class="text-xs-center p-t-3 p-b-3">
-        <h1 class="display-3 m-t-3">Thomas Leese</h1>
-      </header>
+    <header>
+      <div id="header-overlay"></div>
 
-      <main class="text-xs-center p-t-2">
-        <p class="lead" style="width: 50%; margin: auto;">Hi. I’m a software developer specialising in Web technologies. I am currently studying <a href="http://www.southampton.ac.uk/webscience/index.page">Web Science</a> at the <a href="http://www.southampton.ac.uk/">University of Southampton</a>.</p>
-      </main>
+      <div id="header-logo">
+        <h1>Thomas Leese</h1>
+        <h2>Designer and Developer</h2>
 
-      <footer>
-        <nav class="nav nav-inline text-xs-center m-t-2 m-b-2">
-          <a class="nav-link" href="mailto:inbox@thomasleese.me">Email</a>
-          <a class="nav-link" href="https://github.com/thomasleese">GitHub</a>
-          <a class="nav-link" href="https://uk.linkedin.com/in/thomasleese">LinkedIn</a>
-          <a class="nav-link" href="https://twitter.com/tomleese">Twitter</a>
-        </nav>
-      </footer>
+        <a href="https://github.com/thomasleese"><span class="icon ion-social-github"></span></a>
+        <a href="https://twitter.com/tomleese"><span class="icon ion-social-twitter"></span></a>
+        <a href="mailto:inbox@thomasleese.me"><span class="icon ion-email"></span></a>
+      </div>
+
+      <div id="header-more">
+        <span class="ion-chevron-down"></span>
+      </div>
+    </header>
+
+    <main class="container">
+      <section>
+        <h1>Latest Posts</h1>
+
+        {% for post in site.posts %}
+          <article>
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.excerpt }}</p>
+          </article>
+        {% endfor %}
+      </section>
     </main>
+
+    <footer class="container">
+      &copy; 2016 Thomas Leese
+    </footer>
 
     <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
   </body>
