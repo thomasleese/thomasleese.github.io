@@ -9,8 +9,15 @@ layout: page
   <div class="card-columns">
     {% for project in site.data.projects %}
       <div class="card">
-        <div class="card-block">
-          <h4 class="card-title">{{ project.title }}</h4>
+        {% if project.logo %}
+          <img class="card-img-top" src="{{ project.logo }}" alt="{{ project.title }} logo" />
+
+          <div class="card-block">
+        {% else %}
+          <div class="card-block">
+            <h4 class="card-title">{{ project.title }}</h4>
+        {% endif %}
+
           <p class="card-text">{{ project.description }}</p>
           <a href="{{ project.url }}" class="card-link">More information</a>
         </div>
