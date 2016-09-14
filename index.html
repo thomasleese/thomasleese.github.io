@@ -1,39 +1,33 @@
 ---
-layout: page
+layout: base
 ---
 
-<section>
-  <h1>Projects</h1>
-  <hr />
+<header>
+  <h1>Hi there,<br />I’m Thomas.</h1>
+</header>
 
-  <div class="card-columns">
-    {% for project in site.data.projects %}
-      <div class="card">
-        {% if project.logo %}
-          <img class="card-img-top" src="{{ project.logo }}" alt="{{ project.title }} logo" />
+<main>
+  <section id="projects">
+    <h1>Projects</h1>
 
-          <div class="card-block">
-        {% else %}
-          <div class="card-block">
-            <h4 class="card-title">{{ project.title }}</h4>
-        {% endif %}
+    <ul class="bulletless">
+      {% for project in site.data.projects %}
+        <li><a href="{{ project.url }}">{{ project.title }}</a> {{ project.description }}</li>
+      {% endfor %}
+    </ul>
+  </section>
 
-          <p class="card-text">{{ project.description }}</p>
-          <a href="{{ project.url }}" class="card-link">More information</a>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-</section>
+  <!-- <section id="posts">
+    <h1>Posts</h1>
 
-<!-- <section>
-  <h1>Latest Posts</h1>
-  <hr />
+    <ul class="bulletless">
+      {% for post in site.posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a> on {{ post.date | date: '%B %d, %Y' }}</li>
+      {% endfor %}
+    </ul>
+  </section> -->
+</main>
 
-  {% for post in site.posts %}
-    <article>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt }}</p>
-    </article>
-  {% endfor %}
-</section> -->
+<footer>
+  <a href="mailto:thomas@leese.io"><strong>thomas</strong>@leese.io</a>
+</footer>

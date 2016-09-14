@@ -1,6 +1,5 @@
 - title: Gantt Charts
   url: https://www.ganttcharts.xyz/
-  logo:
   description: A website for making Gantt charts.
 
 - title: Will there be space?
@@ -8,17 +7,14 @@
   description: A website to check whether there will be space in some place.
 
 - title: Conjugate by Voice
-  logo: https://raw.githubusercontent.com/thomasleese/conjugate-by-voice/gh-pages/logo.png
   url: https://github.com/thomasleese/conjugate-by-voice
   description: A simple app which lets you conjugate verbs by speaking.
 
 - title: Rooster
-  logo: https://raw.githubusercontent.com/thomasleese/rooster/master/rooster/static/images/logo.png
   url: https://github.com/thomasleese/rooster
   description: Built for Student Robotics, it is an event scheduler.
 
 - title: Cartographer
-  logo: https://raw.githubusercontent.com/thomasleese/cartographer/master/logo.png
   url: https://github.com/thomasleese/cartographer
   description: A Python library for working with electronic tile maps.
 
