@@ -6,6 +6,10 @@
   url: https://will-there-be.space/
   description: A website to check whether there will be space in some place.
 
+- title: Acorn
+  url: https://github.com/thomasleese/acorn
+  description: An attempt at a new LLVM/C++ programming language.
+
 - title: Conjugate by Voice
   url: https://github.com/thomasleese/conjugate-by-voice
   description: A simple app which lets you conjugate verbs by speaking.
