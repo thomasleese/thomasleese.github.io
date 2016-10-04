@@ -9,6 +9,10 @@
 - title: Acorn
   url: https://github.com/thomasleese/acorn
   description: An attempt at a new LLVM/C++ programming language.
+  
+- title: M-O
+  url: https://github.com/thomasleese/mo
+  description: Incredibly simple YAML-based task runner.
 
 - title: Conjugate by Voice
   url: https://github.com/thomasleese/conjugate-by-voice
