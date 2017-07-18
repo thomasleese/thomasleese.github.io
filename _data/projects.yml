@@ -1,6 +1,10 @@
+- title: Meal Planner
+  url: https://www.mealplanner.xyz/
+  description: Recipe management and weekly shopping planner.
+
 - title: Gantt Charts
   url: https://www.ganttcharts.xyz/
-  description: A website for making Gantt charts.
+  description: Easy to use and powerful Gantt Chart creation.
 
 - title: Will there be space?
   url: https://will-there-be.space/
@@ -17,10 +21,6 @@
 - title: Conjugate by Voice
   url: https://github.com/thomasleese/conjugate-by-voice
   description: A simple app which lets you conjugate verbs by speaking.
-
-- title: Rooster
-  url: https://github.com/thomasleese/rooster
-  description: Built for Student Robotics, it is an event scheduler.
 
 - title: Cartographer
   url: https://github.com/thomasleese/cartographer
