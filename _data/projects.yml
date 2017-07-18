@@ -9,6 +9,10 @@
 - title: Will there be space?
   url: https://will-there-be.space/
   description: A website to check whether there will be space in some place.
+  
+- title: Walking Energy
+  url: https://github.com/thomasleese/walking-energy
+  description: Calculate the energy used while walking and store the data in HealthKit.
 
 - title: Acorn
   url: https://github.com/thomasleese/acorn
