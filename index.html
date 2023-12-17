@@ -3,7 +3,7 @@ layout: base
 ---
 
 <header>
-  <h1>Hi there,<br />I’m Thomas.</h1>
+  <h1>Hi there, 👋🏻<br />I’m Thomas.</h1>
 </header>
 
 <main>
@@ -19,7 +19,7 @@ layout: base
 
     <ul class="bulletless">
       {% for employment in site.data.employments %}
-        <li><a href="{{ employment.url }}">{{ employment.name }} {{ employment.description }}</a></li>
+        <li><a href="{{ employment.url }}">{{ employment.name }}</a> {{ employment.description }}</li>
       {% endfor %}
     </ul>
   </section>
