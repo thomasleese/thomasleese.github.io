@@ -11,6 +11,16 @@ layout: base
     <p class="lead">I'm a software developer currently working for the <a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a> and previously studied at the <a href="http://www.southampton.ac.uk/">University of Southampton</a>.
   </section>
 
+  <section id="employments">
+    <h1>Employments</h1>
+
+    <ul class="bulletless">
+      {% for employment in site.data.employments %}
+        <li><a href="{{ employment.url }}">{{ project.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+
   <section id="projects">
     <h1>Projects</h1>
 

@@ -1,0 +1,8 @@
+- name: Department of Education
+  url: https://dfedigital.blog.gov.uk
+
+- name: Ministry of Justice
+  url: https://mojdigital.blog.gov.uk
+
+- name: Government Digital Service
+  url: https://gds.blog.gov.uk
