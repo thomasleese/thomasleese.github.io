@@ -1,19 +1,19 @@
-- title: Acorn
+- name: Acorn
   url: https://github.com/thomasleese/acorn
   description: An attempt at a new LLVM/C++ programming language.
 
-- title: Fetch Decode Execute
+- name: Fetch Decode Execute
   url: https://github.com/thomasleese/fde
   description: An educational tool for demonstrating the Fetch-Decode-Execute cycle.
 
-- title: M-O
+- name: M-O
   url: https://github.com/thomasleese/mo
   description: Incredibly simple YAML-based task runner.
 
-- title: Rural & Rustic
+- name: Rural & Rustic
   url: https://www.rural-and-rustic.wales
   description: Website development.
 
-- title: Solar System Clock
+- name: Solar System Clock
   url: https://github.com/thomasleese/solar-system-clock
   description: A clock inspired by Van Cleef & Arpels Midnight Planétarium watch.

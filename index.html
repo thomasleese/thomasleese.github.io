@@ -19,7 +19,7 @@ layout: base
 
     <ul class="bulletless">
       {% for employment in site.data.employments %}
-        <li><a href="{{ employment.url }}">{{ employment.title }} {{ employment.description }}</a></li>
+        <li><a href="{{ employment.url }}">{{ employment.name }} {{ employment.description }}</a></li>
       {% endfor %}
     </ul>
   </section>
@@ -29,7 +29,7 @@ layout: base
 
     <ul class="bulletless">
       {% for project in site.data.projects %}
-        <li><a href="{{ project.url }}">{{ project.title }}</a> {{ project.description }}</li>
+        <li><a href="{{ project.url }}">{{ project.name }}</a> {{ project.description }}</li>
       {% endfor %}
     </ul>
   </section>
