@@ -1,10 +1,10 @@
 - name: Acorn
   url: https://github.com/thomasleese/acorn
-  description: An attempt at a new LLVM/C++ programming language.
+  description: An experiment in building a LLVM/C++ programming language.
 
-- name: DfE Apply for Qualified Teacher Status
+- name: Apply for Qualified Teacher Status
   url: https://github.com/DFE-Digital/apply-for-qualified-teacher-status
-  description: A service that allows international teachers to apply for qualified teacher status (QTS) in England.
+  description: A service for international teachers to apply for qualified teacher status in England.
 
 - name: Fetch Decode Execute
   url: https://github.com/thomasleese/fde
