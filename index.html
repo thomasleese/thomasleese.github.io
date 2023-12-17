@@ -16,7 +16,7 @@ layout: base
 
     <ul class="bulletless">
       {% for employment in site.data.employments %}
-        <li><a href="{{ employment.url }}">{{ project.title }}</a></li>
+        <li><a href="{{ employment.url }}">{{ employment.title }} {{ employment.description }}</a></li>
       {% endfor %}
     </ul>
   </section>
