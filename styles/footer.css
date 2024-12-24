@@ -1,7 +1,28 @@
-footer {
-    text-align: center;
+.footer-nav {
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 12px -12px 48px -12px;
 }
 
-footer a {
-    color: grey;
+.footer-nav li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.footer-nav li a {
+    font-weight: bold;
+    color: black;
+}
+
+.footer-nav li a:hover {
+    text-decoration: none;
+    color: var(--colour5);
+}
+
+.footer-nav li svg {
+    vertical-align: middle;
+}
+
+.footer-nav li span {
+    vertical-align: middle;
 }

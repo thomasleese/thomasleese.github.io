@@ -1,0 +1,19 @@
+- name: Email
+  url: mailto:thomas@leese.io
+  icon: email
+
+- name: GitHub
+  url: https://github.com/thomasleese
+  icon: github
+
+- name: LinkedIn
+  url: https://www.linkedin.com/in/thomasleese
+  icon: linkedin
+
+- name: Bluesky
+  url: https://bsky.app/profile/thomas.leese.io
+  icon: bluesky
+
+- name: Instagram
+  url: https://www.instagram.com/thomas_leese
+  icon: instagram

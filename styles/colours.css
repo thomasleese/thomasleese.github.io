@@ -30,3 +30,7 @@
 .bg-colour6 {
     background: var(--colour6);
 }
+
+svg {
+    fill: currentColor;
+}
