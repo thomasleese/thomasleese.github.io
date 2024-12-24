@@ -11,12 +11,39 @@
     <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Open+Sans:300,400,600" />
 
     <link href="/styles/normalize.css" rel="stylesheet" />
-    <link href="/styles/theme.css" rel="stylesheet" />
+    <link href="/styles/colours.css" rel="stylesheet" />
+    <link href="/styles/header.css" rel="stylesheet" />
+    <link href="/styles/main.css" rel="stylesheet" />
+    <link href="/styles/footer.css" rel="stylesheet" />
 
     <link rel="icon" href="/images/icon.png" />
   </head>
 
   <body>
-    {{ content }}
+    <header class="header">
+      <div class="container header-container">
+        <a href="/" class="header-brand">Thomas Leese</a>
+
+        <nav class="header-nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-bar bg-colour2"></div>
+      <div class="header-bar bg-colour3"></div>
+      <div class="header-bar bg-colour4"></div>
+      <div class="header-bar bg-colour5"></div>
+      <div class="header-bar bg-colour6"></div>
+    </header>
+
+    <main class="container">
+      {{ content }}
+    </main>
+
+    <footer class="container">
+      <a href="mailto:{{ site.email }}"><strong>thomas</strong>@leese.io</a>
+    </footer>
   </body>
 </html>

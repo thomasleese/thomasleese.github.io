@@ -1,7 +1,4 @@
 body {
-    width: 90%;
-    margin: auto;
-
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1em;
@@ -12,22 +9,10 @@ body {
     -webkit-font-feature-settings: 'kern';
 }
 
-@media (min-width: 600px) {
-    body {
-        width: 70%;
-    }
-}
-
-@media (min-width: 1000px) {
-    body {
-        width: 60%;
-    }
-}
-
 a {
     text-decoration: none;
     font-weight: 400;
-    color: #2980b9;
+    color: var(--colour6);
 }
 
 a:hover {
@@ -47,17 +32,12 @@ a:hover {
     font-size: 1.5rem;
 }
 
-header h1 {
-    font-weight: 300;
-    font-size: 2.5rem;
-}
-
 section h1 {
     margin-top: 0;
     font-weight: 400;
 }
 
-header, section, footer, article {
+section, footer, article {
     padding: 2rem 0;
 }
 
@@ -66,13 +46,5 @@ section, footer, article {
 }
 
 section li {
-    color: grey;
-}
-
-footer {
-    text-align: center;
-}
-
-footer a {
     color: grey;
 }

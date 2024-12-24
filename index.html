@@ -2,39 +2,29 @@
 layout: base
 ---
 
-<header>
-  <h1>Hi there, 👋🏻<br />I’m Thomas.</h1>
-</header>
+<section id="about">
+  <p class="lead">
+    I’m a software developer currently working for the UK’s <a href="https://www.gov.uk/government/organisations/department-for-education">Department for Education</a>
+    and previously studied at the <a href="http://www.southampton.ac.uk/">University of Southampton</a>.
+  </p>
+</section>
 
-<main>
-  <section id="about">
-    <p class="lead">
-      I’m a software developer currently working for the UK’s <a href="https://www.gov.uk/government/organisations/department-for-education">Department for Education</a>
-      and previously studied at the <a href="http://www.southampton.ac.uk/">University of Southampton</a>.
-    </p>
-  </section>
+<section id="employments">
+  <h1>Employments</h1>
 
-  <section id="employments">
-    <h1>Employments</h1>
+  <ul class="bulletless">
+    {% for employment in site.data.employments %}
+      <li><a href="{{ employment.url }}">{{ employment.name }}</a> {{ employment.description }}</li>
+    {% endfor %}
+  </ul>
+</section>
 
-    <ul class="bulletless">
-      {% for employment in site.data.employments %}
-        <li><a href="{{ employment.url }}">{{ employment.name }}</a> {{ employment.description }}</li>
-      {% endfor %}
-    </ul>
-  </section>
+<section id="projects">
+  <h1>Projects</h1>
 
-  <section id="projects">
-    <h1>Projects</h1>
-
-    <ul class="bulletless">
-      {% for project in site.data.projects %}
-        <li><a href="{{ project.url }}">{{ project.name }}</a> {{ project.description }}</li>
-      {% endfor %}
-    </ul>
-  </section>
-</main>
-
-<footer>
-  <a href="mailto:{{ site.email }}"><strong>thomas</strong>@leese.io</a>
-</footer>
+  <ul class="bulletless">
+    {% for project in site.data.projects %}
+      <li><a href="{{ project.url }}">{{ project.name }}</a> {{ project.description }}</li>
+    {% endfor %}
+  </ul>
+</section>

@@ -1,0 +1,32 @@
+:root {
+    --colour1: rgb(230, 241, 244);
+    --colour2: rgb(145, 213, 255);
+    --colour3: rgb(78, 171, 230);
+    --colour4: rgb(45, 148, 204);
+    --colour5: rgb(33, 100, 166);
+    --colour6: rgba(12, 51, 102, 0.96);
+}
+
+.bg-colour1 {
+    background: var(--colour1);
+}
+
+.bg-colour2 {
+    background: var(--colour2);
+}
+
+.bg-colour3 {
+    background: var(--colour3);
+}
+
+.bg-colour4 {
+    background: var(--colour4);
+}
+
+.bg-colour5 {
+    background: var(--colour5);
+}
+
+.bg-colour6 {
+    background: var(--colour6);
+}
