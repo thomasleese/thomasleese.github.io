@@ -1,3 +1,11 @@
+.footer-line {
+    background: var(--colour5);
+    border: none;
+    height: 1px;
+    border: 0;
+    margin-bottom: 2rem;
+}
+
 .footer-nav {
     list-style-position: inside;
     padding-left: 0;
@@ -7,10 +15,6 @@
 .footer-nav li {
     display: inline-block;
     margin: 0 12px;
-}
-
-.footer-nav li a {
-    font-weight: bold;
 }
 
 .footer-nav li a:hover {

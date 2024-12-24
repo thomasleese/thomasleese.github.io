@@ -2,12 +2,18 @@
 layout: base
 ---
 
-<section id="projects">
-  <h1>Projects</h1>
+<h2>Projects</h2>
 
-  <ul class="bulletless">
-    {% for project in site.data.projects %}
-      <li><a href="{{ project.url }}">{{ project.name }}</a> {{ project.description }}</li>
-    {% endfor %}
-  </ul>
-</section>
+<div class="cards">
+  {% for project in site.data.projects %}
+    <div class="card">
+      <h3 class="card-name">
+        <a href="{{ project.url }}">
+          {{ project.name }}
+        </a>
+      </h3>
+
+      <p class="card-description">{{ project.description }}</p>
+    </div>
+  {% endfor %}
+</div>

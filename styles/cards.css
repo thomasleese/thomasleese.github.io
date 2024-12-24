@@ -1,0 +1,21 @@
+.cards {
+    columns: 2;
+    column-gap: 1.2rem;
+    margin: 2rem 0;
+}
+
+.card {
+    display: block;
+    background: var(--colour1);
+    margin-bottom: 1.2rem;
+}
+
+.card-name {
+    margin: 0;
+    padding: 1rem 1rem 0.2rem 1rem;
+}
+
+.card-description {
+    margin: 0;
+    padding: 0.2rem 1rem 1rem 1rem;
+}
