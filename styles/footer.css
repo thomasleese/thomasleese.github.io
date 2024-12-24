@@ -11,12 +11,10 @@
 
 .footer-nav li a {
     font-weight: bold;
-    color: black;
 }
 
 .footer-nav li a:hover {
     text-decoration: none;
-    color: var(--colour5);
 }
 
 .footer-nav li svg {
