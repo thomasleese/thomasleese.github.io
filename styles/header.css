@@ -17,8 +17,6 @@
 
 .header {
     background: var(--colour1);
-    position: sticky;
-    top: 0;
 }
 
 .header-container {
@@ -26,6 +24,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem 0;
 }
 
 .header-brand {
@@ -35,6 +34,14 @@
 
 .header-nav li {
     display: inline-block;
+}
+
+.header-nav a {
+    padding: 0.2rem 0.6rem;
+}
+
+.header-nav a.active {
+    background: var(--colour2);
 }
 
 .header-bar {
