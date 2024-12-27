@@ -2,7 +2,7 @@
   url: https://github.com/DFE-Digital/apply-for-qualified-teacher-status
   description: A service available to international teachers to apply for qualified teacher status in England and Wales.
 
-- name: Dot files
+- name: dotfiles
   url: https://github.com/thomasleese/dotfiles
   description: A set of configuration files for command line tools I use.
 

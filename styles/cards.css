@@ -1,7 +1,13 @@
 .cards {
-    columns: 2;
+    columns: 1;
     column-gap: 1.2rem;
     margin: 2rem 0;
+}
+
+@media (min-width: 700px) {
+    .cards {
+        columns: 2;
+    }
 }
 
 .card {
